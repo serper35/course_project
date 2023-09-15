@@ -29,7 +29,7 @@ public class Main {
 
         employee.allEmployee();
 
-        //employee.depMinSalary();
+        employee.depMinSalary();
     }
 
 }

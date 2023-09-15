@@ -90,17 +90,19 @@ public class EmployeeBook {
 
     public void depMinSalary() {
         Scanner scan = new Scanner(System.in);
+        System.out.println("Введите номер департамета.");
         int inputDepartament = scan.nextInt();
+        double minSalary = 100000000000.0;
+        Employee temp = employees[0];
         for (int i = 0; i < size; i++) {
-            double minSalary = 100000000000.0;
             if (employees[i].getDepartment() == inputDepartament) {
                 if (employees[i].getSalary() < minSalary) {
                     minSalary = employees[i].getSalary();
-
+                    temp = employees[i];
                 }
             }
-
         }
+        System.out.println("\nВ департаменте №" + inputDepartament + " минимальная зарплата - " + minSalary + " у сотрудника " + temp.getFullName());
     }
 
 }
