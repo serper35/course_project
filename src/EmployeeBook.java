@@ -81,10 +81,10 @@ public class EmployeeBook {
     public void indexsalary() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите процент индексации зарплаты.");
-        double index = (scan.nextDouble()) /10;
+        double index = (scan.nextDouble());
 
         for (int i = 0; i < size; i++) {
-            employees[i].setSalary((employees[i].getSalary() * index));
+            employees[i].setSalary(((employees[i].getSalary() * index) / 100) + employees[i].getSalary());
         }
     }
 
