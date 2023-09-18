@@ -30,6 +30,31 @@ public class Main {
         employee.allEmployee();
 
         employee.depMinSalary();
-    }
 
+        employee.depMaxSalary();
+
+        employee.depTotalSalary();
+
+        employee.depAverageSalary();
+
+        employee.depIndexSalary();
+
+        employee.depEmployees();
+
+        employee.searchSalaryBelowNumber();
+
+        employee.searchSalaryAbovewNumber();
+
+        employee.deleteEmployee(2);
+
+        employee.allEmployee();
+
+        employee.setSalary("Irina Andreevna Stok");
+
+        employee.setDepartment("Irina Andreevna Stok");
+
+        employee.allEmployee();
+
+        employee.fullNameByDep();
+    }
 }
